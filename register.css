@@ -1,0 +1,105 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(250, 241, 223);
+}
+
+.container{
+    margin-left: 36.5%;
+    margin-top: 1.5%;
+    background-color: white;
+    width: 30rem;
+    height: 45rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.title{
+    color: rgb(97, 97, 97);
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+.title span{
+    color: rgb(219, 141, 113);
+}
+
+.facebook img{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+
+}
+.facebook p{
+    font-size: large;
+    font-weight: bold;
+}
+.facebook a{
+    text-decoration: none;
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 25rem;
+    height: 3rem;
+    margin-left: 50px;
+}
+
+.google img{
+    width: 25px;
+    height: 25px;
+    margin-right: 27px;
+}
+.google p{
+    padding-right: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+.google a{
+    text-decoration: none;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 25rem;
+    height: 3rem;
+    margin-left: 50px;
+}
+
+
+#btn{
+    width: 300px;
+    height: 50px;
+    margin-top:  25px;
+    background-color: rgb(219, 141, 113);
+    border: 1px solid rgb(219, 141, 113);
+    border-radius: 20px;
+    font-size: larger;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: rgb(253, 198, 95);
+}
+
+#ose p{
+    font-size: 30px;
+    color: grey;
+}
+
+#emri{
+    width: 24rem;
+    height: 2.5rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(219, 141, 113);
+    padding-left: 20px;
+    font-size: medium;
+}
