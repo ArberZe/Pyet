@@ -18,7 +18,11 @@
 <body>
     <nav id="nav" class="">
         <div class="logo">
-            <h1>Pyet</h1>
+            <a href="./faqja-pyetjeve-login.html">
+                <div class="logo-div">
+                
+                </div>
+            </a>
         </div>
         <input type="search" id="search-bar" placeholder="Kerko">
         <div class="nav-icons">
@@ -55,6 +59,7 @@
                         <ul id="mobile-dropdown-links">
                             <li><a href="#">Top Topics</a></li>
                             <li><a href="#">Rreth Nesh</a></li>
+                            <li><a href="./Contact/index.html">Kontakto</a></li>
                             <li><a href="#">Ndihma</a></li>
                             <li><a href="#">Reklamo</a></li>
                             <li><a href="#">Terms</a></li>
@@ -209,7 +214,12 @@
                     <p><span>Posted By:</span> <span class="username"><b>NoName User</b></span></p>
                 </div>
                 <div class="question-content-div">
-                    <h1>What does the fox say?</h1>
+                    <div class="question-top-content">
+                        <h1>What does the fox say?</h1>
+                        <div id="add-to-favorites-icon-div" onclick="addToFavorites()">
+                            <i class="fa-solid fa-heart fa-xl" id="add-to-favorites-icon" style="color: #BAA89B;"></i>
+                        </div>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem repudiandae libero
                         doloremque nemo itaque magni placeat nisi dicta sequi commodi animi, temporibus, tempora quod
                         vero fugit atque, nihil nulla similique sapiente! Lorem ipsum dolor sit amet consectetur
@@ -265,6 +275,7 @@
             <ul>
                 <li><a href="#">Top Topics</a></li>
                 <li><a href="#">Rreth Nesh</a></li>
+                <li><a href="./Contact/index.html">Kontakto</a></li>
                 <li><a href="#">Ndihma</a></li>
                 <li><a href="#">Reklamo</a></li>
                 <li><a href="#">Terms</a></li>
@@ -273,91 +284,8 @@
         </div>
     </main>
 
-    <script>
-        var searchBarForm = document.querySelector('#search-bar-form');
-        var mobileFilterForumText = document.querySelector('#mobile-filter-forum-text');
-        var addQuestionBtn = document.querySelector('.add-question-btn');
-        searchBarForm.addEventListener('click', () => {
-            mobileFilterForumText.style.display = 'none';
-            addQuestionBtn.style.display = 'none';
-        })
-        document.body.addEventListener('click', () => {
-            setTimeout(() => {
-                if (searchBarForm.offsetWidth == 50) {
-                    mobileFilterForumText.style.display = 'block';
-                    addQuestionBtn.style.display = 'block';
-                }
-            }, 500);
-        })
-
-        const nav = document.querySelector('.mobile-navigation-bar');
-        let navTop = nav.offsetTop;
-
-        function fixedNav() {
-            if (window.scrollY >= navTop) {
-                nav.classList.add('fixed');
-            } else {
-                nav.classList.remove('fixed');
-            }
-        }
-
-        window.addEventListener('scroll', fixedNav);
-
-        // Change to your STICKY element
-        let parent = document.querySelectorAll('.sticky').parentElement;
-
-        while (parent) {
-            const hasOverflow = getComputedStyle(parent).overflow;
-            if (hasOverflow !== 'visible') {
-                console.log(hasOverflow, parent);
-            }
-            parent = parent.parentElement;
-        }
-
-        let addQuestionPopupDiv = document.querySelector('.add-question-popup-div');
-
-        function openPopup() {
-            addQuestionPopupDiv.style.display = 'inline-block';
-            console.log("hello")
-        }
-
-        function closePopup() {
-            addQuestionPopupDiv.style.display = 'none';
-        }
-
-        var questionOptionsDiv = document.querySelector('.question-options-div');
-        var questionCardOptions = document.querySelector('.question-card-options');
-
-        questionOptionsDiv.addEventListener('click', () => {
-            if (questionOptionsDiv.classList.contains('addMenuIconColor')) {
-                questionOptionsDiv.classList.remove('addMenuIconColor')
-                questionCardOptions.style.display = "none";
-            } else {
-                questionOptionsDiv.classList.add('addMenuIconColor')
-                questionCardOptions.style.display = "block";
-            }
-        })
-
-        let mobileNavigationDropdown = document.querySelector('.mobile-navigation-dropdown')
-        let mobileDropdownLinks = document.querySelector('#mobile-dropdown-links')
-
-        mobileNavigationDropdown.addEventListener('click', ()=>{
-            if(mobileDropdownLinks.style.display == "none"){
-                mobileDropdownLinks.style.display = "block"
-            }else{
-                mobileDropdownLinks.style.display = "none"
-            }
-        })
-
-        let mobileFilterForumDiv = document.querySelector('.mobile-filter-forum-div');
-
-        mobileFilterForumText.addEventListener('click', ()=>{
-            if(mobileFilterForumDiv.style.display == "none"){
-                mobileFilterForumDiv.style.display = "block"
-            }else{
-                mobileFilterForumDiv.style.display = "none"
-            }
-        })
+    <script src="./faqja-pyetjeve.js">
+       
     </script>
 </body>
 

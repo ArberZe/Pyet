@@ -195,6 +195,13 @@ main{
 /*Pjesa e navigimit ne anën e djathtë:FUND*/
 
 /*-----------Stilizimi i question card: Fillim------------*/
+
+.question-top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .questions-div{
     width: 60%;
     display: flex;

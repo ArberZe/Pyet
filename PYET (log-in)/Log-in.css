@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -11,6 +14,29 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #fff7ed;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 250px;
+  width: 100%;
+  width: 100%;
+  min-height: 6vh;
+  -webkit-box-shadow: 0px 9px 12px -6px #F1A183; 
+  box-shadow: 0px 5px 12px -12px #F1A183;
+}
+
+nav .logo .logo-div{
+  background-image: url(../img/Logo\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 60px;
+  min-height: 40px;
 }
 
 .container {
@@ -29,7 +55,7 @@ body {
   left: -50%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(-45deg, #df4adf, #520852);
+  background-color:#e37d56;;
   z-index: 6;
   transform: translateX(100%);
   transition: 1s ease-in-out;
@@ -69,7 +95,7 @@ form {
 
 .title {
   font-size: 35px;
-  color: #df4adf;
+  color: #e37d56;
   margin-bottom: 10px;
 }
 
@@ -78,7 +104,7 @@ form {
   height: 50px;
   background: #f0f0f0;
   margin: 10px 0;
-  border: 2px solid #df4adf;
+  border: 2px solid #e37d56;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -102,16 +128,18 @@ form {
 .btn {
   width: 150px;
   height: 50px;
-  border: none;
+  border: 1px solid #e37d56;
   border-radius: 50px;
-  background: #df4adf;
-  color: #fff;
+  background: #FFF7ED;
+  color: #e37d56;
   font-weight: 600;
   margin: 10px 0;
   text-transform: uppercase;
 }
 .btn:hover {
-  background: #c03cc0;
+  background: #e37d56;
+  color: white;
+  cursor: pointer;
 }
 
 .social-text {

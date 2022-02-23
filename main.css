@@ -25,3 +25,11 @@
 .btn:active{
     transform: scale(1.02);
 }
+
+.logo-div{
+    background-image: url(./img/Logo\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 40px;
+}
